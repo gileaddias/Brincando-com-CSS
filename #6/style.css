@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-cover {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(135deg, #ff007a, #00f5d4);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://via.placeholder.com/400x600/000000/FFFFFF?text=Graphic+Overlay') center/cover;
+    opacity: 0.5;
+}
+
+.game-info {
+    position: relative;
+    z-index: 2;
+}
+
+.game-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.game-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.play-button,
+.details-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.play-button {
+    background-color: #ffb900;
+    color: #282c34;
+}
+
+.details-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.play-button:hover {
+    background-color: #ffa300;
+    transform: scale(1.05);
+}
+
+.details-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/*FIM*/
+
+
+
+
+
